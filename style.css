@@ -1,0 +1,6 @@
+html {
+	font-family: 'Poppins', sans-serif;
+	font-size: 62.5%; 
+	/* Detta gör scaling enklare. Det gör att 1rem motsvarar 10 pixlar.
+	Vill jag sätta något till t.ex 30 pixlar så kan jag nu skriva 3 rem i stället för att konstant kolla en pixel-rem converter. */
+}
