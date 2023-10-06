@@ -1,6 +1,94 @@
-html {
-	font-family: 'Poppins', sans-serif;
-	font-size: 62.5%; 
-	/* Detta gör scaling enklare. Det gör att 1rem motsvarar 10 pixlar.
-	Vill jag sätta något till t.ex 30 pixlar så kan jag nu skriva 3 rem i stället för att konstant kolla en pixel-rem converter. */
+* {
+	border: 1px solid black;
+}
+
+body {
+	/* width: 100%; */
+	font-family: Poppins, sans-serif;
+	margin: 0;
+	background-color: #8aa1f7;
+}
+
+header, footer {
+	/* width: 100%; */
+	display: flex;
+	justify-content: center;
+	background-color: #f2f296;
+}
+
+.wrapper {
+	/* width: 100%; */
+	display:flex;
+	flex-wrap: wrap;
+	min-height: 100vh;
+}
+
+/* .content-left, .content-right {
+	justify-self: stretch;
+} */
+
+.content-left {
+	display: flex;
+	flex-direction: column;
+	background-color: #9adc9a;
+	padding: 2em;
+	width: 50%;
+	flex: 1;
+}
+
+.content-right {
+	display: flex;
+	flex-direction: column;
+	background-color: #e99696;
+	padding: 2em;
+	width: 50%;
+	flex: 1;
+}
+
+.content-left .bottom,
+.content-right .bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.bottom {
+	margin-top: auto; 
+}
+
+.bottom div p {
+	font-weight: bold;
+}
+
+a {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	align-self: center;
+	width: 5em;
+	height: 3em;
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+	border-radius: 0.7em;
+	background-color: antiquewhite;
+}
+
+h2 {
+	font-size: 1.1em;
+	line-height: 130%;
+	align-self: center;
+}
+
+p {
+	display: flex;
+    justify-content: center;
+	font-size: 0.8em;
+	line-height: 140%;
+	margin-top: auto;
+}
+
+footer {
+	margin-top: 0;
 }
