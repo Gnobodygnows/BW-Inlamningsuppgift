@@ -54,36 +54,33 @@
 			<div class="bottom">
 				<div>
 					<p>
-						Formuläret hittar du:
+						Formuläret hittar du nedan.
 					</p>
-				</div>
-				<div>
-					<a href="#">Här</a>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="formula">
 		<form>
-			<section class="form-section">
+			<div class="form-section">
 				<label for="form-name"> Ditt namn </label>
 				<input id="form-name" type="text" placeholder="Namn" required minlength="2"/>
 				<p class="error-message"> Var vänlig skriv in ditt namn </p>
-			</section>
+			</div>
 			
-			<section class="form-section">
+			<div class="form-section">
 				<label for="form-email"> E-post adress </label>
 				<input id="form-email" type="text" placeholder="E-post" required minlength="5"/>
 				<p class="error-message"> Var vänlig skriv in din E-post adress </p>
-			</section>
+			</div>
 
-			<section class="form-section">
+			<div class="form-section">
 				<label for="form-password"> Lösenord </label>
 				<input id="form-password" type="password" required minlength="4"/>
 				<p class="error-message"> Var vänlig skriv ditt lösenord </p>
-			</section>
+			</div>
 
-			<section class="form-section">
+			<div class="form-section">
 				<p> Klicka i vilka dagar du kan närvara. Alla dagar eller enskilda. </p>
 				<div>
 					<input id="alla" type="checkbox" name="check"/>
@@ -115,12 +112,17 @@
 					<input id="vegetariskt" type="radio" name="mat" />
 					<label for="vegetariskt"> Vegetariskt </label>
 				</div>
-				<section class="form-section row">
+				<div class="form-section">
+					<label for="form-name"> Allergier - Här kan du skriva in ev. allergier </label>
+					<input id="form-name" type="text" placeholder="T.ex nötallergi" required minlength="2"/>
+					<p class="error-message"> Var vänlig fyll i allergier, eller skriv "inga allergier" </p>
+				</div>
+				<div class="form-section row">
 					<button type="button"> Skicka </button>
 					<button type="button"> Avbryt </button>
-				</section>
+				</div>
 
-			</section>
+			</div>
 		</form>
 	</div>
 
