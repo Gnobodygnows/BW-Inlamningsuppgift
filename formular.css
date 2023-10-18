@@ -1,0 +1,71 @@
+form {
+	margin: 0.5em 0;
+	padding: 0 1em;
+}
+
+.formula {
+	display: flex;
+	justify-content: center;
+}
+.form-section {
+	display: flex;
+	flex-direction: column;
+	margin: 1em 0;
+	background-color: transparent;
+}
+
+.form-section.row {
+	display: flex;
+	flex-direction: row;
+	gap: 0.5em;
+}
+
+label {
+	font-size: 0.8em;
+}
+
+input:valid {
+	border: 0.2em solid #238247;
+
+}
+
+input:invalid {
+	border: 0.2em solid rgb(187, 56, 56);
+	content: "*"
+}
+
+.error-message {
+	visibility: hidden;
+	margin: 0;
+	color: rgb(111, 33, 33);
+	font-weight: bold;
+}
+
+input:invalid+.error-message {
+	visibility: visible;
+}
+
+/* input[type="checkbox"][name="check"]:required+label::after {
+	content: "*";
+	color: rgb(168, 52, 46);
+} */
+
+/* input[type="checkbox"][name="check"]:checked+label::after {
+	content: "*";
+	color: rgb(46, 168, 62);
+} */
+
+/* input[type="checkbox"][name="check"]:required:invalid {
+	outline: 2px solid red;
+	outline-offset: -2px;
+} */
+
+input[type="checkbox"]:checked+label, input[type="radio"]:checked+label {
+	color: #238247;
+}
+
+
+
+
+
+

@@ -7,6 +7,7 @@
 	<title>Bättre Web</title>
 
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="formular.css">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,6 +50,7 @@
 				För att anmäla ditt intresse och för att din vistelse hos oss ska bli så bra och smidig som möjligt,
 				skulle vi vilja att du fyller i ett forumulär!
 			</p>
+			<p> *OBS* (Du använder samma E-post adress och lösenord som när du loggar in hos ditt företag) </p>
 			<div class="bottom">
 				<div>
 					<p>
@@ -60,8 +62,68 @@
 				</div>
 			</div>
 		</div>
-
 	</div>
+	<div class="formula">
+		<form>
+			<section class="form-section">
+				<label for="form-name"> Ditt namn </label>
+				<input id="form-name" type="text" placeholder="Namn" required minlength="2"/>
+				<p class="error-message"> Var vänlig skriv in ditt namn </p>
+			</section>
+			
+			<section class="form-section">
+				<label for="form-email"> E-post adress </label>
+				<input id="form-email" type="text" placeholder="E-post" required minlength="5"/>
+				<p class="error-message"> Var vänlig skriv in din E-post adress </p>
+			</section>
+
+			<section class="form-section">
+				<label for="form-password"> Lösenord </label>
+				<input id="form-password" type="password" required minlength="4"/>
+				<p class="error-message"> Var vänlig skriv ditt lösenord </p>
+			</section>
+
+			<section class="form-section">
+				<p> Klicka i vilka dagar du kan närvara. Alla dagar eller enskilda. </p>
+				<div>
+					<input id="alla" type="checkbox" name="check"/>
+					<label for="alla"> Alla dagar </label>
+				</div>
+				<div>
+					<input id="fredag" type="checkbox" name="check"/>
+					<label for="fredag"> Fredag </label>
+				</div>
+				<div>
+					<input id="lördag" type="checkbox" name="check"/>
+					<label for="lördag"> Lördag </label>
+				</div>
+				<div>
+					<input id="söndag" type="checkbox" name="check"/>
+					<label for="söndag"> Söndag </label>
+				</div>
+	
+				<p>Välj den typ av mat du föredrar. Kött, fisk eller vegetariskt.</p>
+				<div>
+					<input id="kött" type="radio" name="mat" /> 
+					<label for="kött"> Kött </label>
+				</div>
+				<div>
+					<input id="fisk" type="radio" name="mat" />
+					<label for="fisk"> Fisk </label>
+				</div>
+				<div>
+					<input id="vegetariskt" type="radio" name="mat" />
+					<label for="vegetariskt"> Vegetariskt </label>
+				</div>
+				<section class="form-section row">
+					<button type="button"> Skicka </button>
+					<button type="button"> Avbryt </button>
+				</section>
+
+			</section>
+		</form>
+	</div>
+
 	<footer>
 		hello
 	</footer>
