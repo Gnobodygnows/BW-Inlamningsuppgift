@@ -16,7 +16,7 @@ header, footer {
 	/* width: 100%; */
 	display: flex;
 	justify-content: center;
-	background-color: transparent;
+	background-color: rgba(140, 190, 234, 0.7)
 }
 
 .wrapper {
@@ -26,6 +26,7 @@ header, footer {
 	/* min-height: 100vh; */
 	padding: 5em 5em 0 5em;
 	gap: 5em;
+	background-color: rgba(140, 190, 234, 0.7)
 }
 
 /* .content-left, .content-right {
@@ -63,9 +64,6 @@ header, footer {
     justify-content: center; 
 }
 
-.bottom {
-	/* margin-top: auto;  */
-}
 
 .bottom div p {
 	font-weight: bold;
@@ -92,11 +90,9 @@ h2 {
 }
 
 p {
-	display: flex;
-    justify-content: flex-start;
 	font-size: 0.8em;
 	line-height: 140%;
-	/* margin-top: auto; */
+
 }
 
 footer {

@@ -5,8 +5,10 @@ form {
 
 .formula {
 	display: flex;
-	justify-content: center;
-	background-color: rgba(10, 30, 47, 0.5)
+	flex-direction: column;
+	align-items: center;
+	background-color: rgba(140, 190, 234, 0.7)
+	
 }
 .form-section {
 	display: flex;
@@ -32,7 +34,7 @@ input:valid {
 }
 
 input:invalid {
-	border: 0.2em solid rgb(187, 56, 56);
+	border: 0.2em solid #d42c2c;
 	border-radius: 0.4em;
 	
 }
@@ -40,7 +42,7 @@ input:invalid {
 .error-message {
 	visibility: hidden;
 	margin: 0;
-	color: rgb(212, 44, 44);
+	color: #561212;
 	font-weight: bold;
 }
 
@@ -48,6 +50,13 @@ input:invalid+.error-message {
 	visibility: visible;
 }
 
+input[type="checkbox"]:checked+label, input[type="radio"]:checked+label {
+	color: #238247;
+}
+
+input:focus {
+	outline: none;
+}
 /* input[type="checkbox"][name="check"]:required+label::after {
 	content: "*";
 	color: rgb(168, 52, 46);
@@ -62,10 +71,6 @@ input:invalid+.error-message {
 	outline: 2px solid red;
 	outline-offset: -2px;
 } */
-
-input[type="checkbox"]:checked+label, input[type="radio"]:checked+label {
-	color: #238247;
-}
 
 
 

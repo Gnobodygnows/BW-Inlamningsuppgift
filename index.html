@@ -48,7 +48,7 @@
 			</h2>
 			<p>
 				För att anmäla ditt intresse och för att din vistelse hos oss ska bli så bra och smidig som möjligt,
-				skulle vi vilja att du fyller i ett forumulär!
+				skulle vi vilja att du fyller i ett formulär!
 			</p>
 			<p> *OBS* (Du använder samma E-post adress och lösenord som när du loggar in hos ditt företag) </p>
 			<div class="bottom">
@@ -61,47 +61,54 @@
 		</div>
 	</div>
 	<div class="formula">
+		<h1>Anmäl dig här!</h1>
 		<form>
 			<div class="form-section">
-				<label for="form-name"> Ditt namn </label>
-				<input id="form-name" type="text" placeholder="Namn" required minlength="2"/>
+				<label for="form-name"> <strong>Ditt namn</strong> </label>
+				<input id="form-name" type="text" placeholder="Namn" required minlength="2" />
 				<p class="error-message"> Var vänlig skriv in ditt namn </p>
 			</div>
-			
+
 			<div class="form-section">
-				<label for="form-email"> E-post adress </label>
-				<input id="form-email" type="text" placeholder="E-post" required minlength="5"/>
+				<label for="form-adress"> <strong>Adress</strong> </label>
+				<input id="form-adress" type="text" placeholder="Din adress" required minlength="10" />
+				<p class="error-message"> Var vänlig skriv in ditt namn </p>
+			</div>
+
+			<div class="form-section">
+				<label for="form-email"> <strong>E-post adress</strong> </label>
+				<input id="form-email" type="email" placeholder="E-post" required minlength="5" />
 				<p class="error-message"> Var vänlig skriv in din E-post adress </p>
 			</div>
 
 			<div class="form-section">
-				<label for="form-password"> Lösenord </label>
-				<input id="form-password" type="password" required minlength="4"/>
+				<label for="form-password"> <strong>Lösenord</strong> </label>
+				<input id="form-password" type="password" placeholder="Skriv in ditt lösenord" required minlength="4" />
 				<p class="error-message"> Var vänlig skriv ditt lösenord </p>
 			</div>
 
 			<div class="form-section">
-				<p> Klicka i vilka dagar du kan närvara. Alla dagar eller enskilda. </p>
+				<p> <strong>Klicka i vilka dagar du kan närvara. Alla dagar eller enskilda.</strong> </p>
 				<div>
-					<input id="alla" type="checkbox" name="check"/>
+					<input id="alla" type="checkbox" name="check" />
 					<label for="alla"> Alla dagar </label>
 				</div>
 				<div>
-					<input id="fredag" type="checkbox" name="check"/>
+					<input id="fredag" type="checkbox" name="check" />
 					<label for="fredag"> Fredag </label>
 				</div>
 				<div>
-					<input id="lördag" type="checkbox" name="check"/>
+					<input id="lördag" type="checkbox" name="check" />
 					<label for="lördag"> Lördag </label>
 				</div>
 				<div>
-					<input id="söndag" type="checkbox" name="check"/>
+					<input id="söndag" type="checkbox" name="check" />
 					<label for="söndag"> Söndag </label>
 				</div>
-	
-				<p>Välj den typ av mat du föredrar. Kött, fisk eller vegetariskt.</p>
+
+				<p><strong>Välj den typ av mat du föredrar. Kött, fisk eller vegetariskt.</strong></p>
 				<div>
-					<input id="kött" type="radio" name="mat" /> 
+					<input id="kött" type="radio" name="mat" />
 					<label for="kött"> Kött </label>
 				</div>
 				<div>
@@ -114,12 +121,12 @@
 				</div>
 				<div class="form-section">
 					<label for="form-name"> Allergier - Här kan du skriva in ev. allergier </label>
-					<input id="form-name" type="text" placeholder="T.ex nötallergi" required minlength="2"/>
+					<input id="form-name" type="text" placeholder="T.ex nötallergi" required minlength="2" />
 					<p class="error-message"> Var vänlig fyll i allergier, eller skriv "inga allergier" </p>
 				</div>
 				<div class="form-section row">
-					<button type="button"> Skicka </button>
-					<button type="button"> Avbryt </button>
+					<button type="submit"> Anmäl dig </button>
+					<button type="reset"> Rensa </button>
 				</div>
 
 			</div>
@@ -132,3 +139,12 @@
 </body>
 
 </html>
+
+
+<!--
+adress i formuläret
+minska på informationstext
+datum ev. i headern
+min-width för responsivitet
+ev. ändra till sections, mycket divar
+-->
