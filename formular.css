@@ -1,22 +1,25 @@
 form {
-	margin: 0.5em 0;
-	padding: 0 1em;
+	padding: 0.8em;
 }
 
 .formula {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: rgba(140, 190, 234, 0.7)
-	
+	background-color: rgba(140, 190, 234, 0.5)
 }
+
+.formula h1 {
+	color: white;
+}
+
 .form-section {
 	display: flex;
 	flex-direction: column;
-	margin: 1em;
+	margin: 1em 0;
 }
 
-.form-section.row {
+.form-section.button-row {
 	display: flex;
 	flex-direction: row;
 	gap: 0.5em;
@@ -25,6 +28,8 @@ form {
 label {
 	font-size: 0.8em;
 	border-radius: 0.4em;
+	color: white;
+	text-shadow: 1px 1px 3px rgb(0, 0, 0);
 }
 
 input:valid {
@@ -36,44 +41,54 @@ input:valid {
 input:invalid {
 	border: 0.2em solid #d42c2c;
 	border-radius: 0.4em;
-	
+
 }
 
 .error-message {
 	visibility: hidden;
 	margin: 0;
-	color: #561212;
+	color: #721717;
 	font-weight: bold;
+	text-shadow: none;
 }
 
 input:invalid+.error-message {
 	visibility: visible;
 }
 
-input[type="checkbox"]:checked+label, input[type="radio"]:checked+label {
-	color: #238247;
-}
-
 input:focus {
 	outline: none;
 }
-/* input[type="checkbox"][name="check"]:required+label::after {
-	content: "*";
-	color: rgb(168, 52, 46);
-} */
 
-/* input[type="checkbox"][name="check"]:checked+label::after {
-	content: "*";
-	color: rgb(46, 168, 62);
-} */
+input[type="checkbox"]:checked+label,
+input[type="radio"]:checked+label {
+	color: #238247;
+}
 
-/* input[type="checkbox"][name="check"]:required:invalid {
-	outline: 2px solid red;
-	outline-offset: -2px;
-} */
+input[type="checkbox"],
+input[type="radio"],
+input[type="checkbox"]+label:hover,
+input[type="radio"]+label:hover {
+	cursor: pointer;
+	user-select: none;
+}
 
+input[type="checkbox"]+label,
+input[type="radio"]+label {
+padding-left: 0.5em;
+}
 
-
-
-
-
+button[type="submit"],
+button[type="reset"] {
+	border-radius: 0.5em;
+	height: 4em;
+	width: 8em;
+	font-family: 'poppins';
+	font-weight: bold;
+	color: white;
+	border-color: rgb(65, 133, 223);
+	background: rgb(34, 193, 195);
+	background: linear-gradient(169deg, rgba(34, 193, 195, 1) 0%, rgba(74, 134, 232, 1) 57%, rgba(89, 109, 226, 1) 81%);
+	text-shadow: 1px 1px 2px rgb(0, 0, 0);
+	cursor: pointer;
+}

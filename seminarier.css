@@ -21,12 +21,6 @@ header {
 	border-bottom: 0.12em solid white;
 }
 
-
-h1 {
-	color: white;
-	text-shadow: 1px 1px 2px rgb(0, 0, 0);
-}
-
 header a {
 	text-decoration: none;
 	color: white;
@@ -37,49 +31,84 @@ header a:hover {
 	text-decoration: underline;
 }
 
-.semi {
-	display: none;
+h1 {
+		color: white;
+		text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
 
-.wrapper {
+h2 {
+	color: white;
+	text-shadow: 1px 1px 2px rgb(0, 0, 0);
+	margin: 0;
+}
+
+h3 {
+	color: white;
+	text-shadow: 1px 1px 2px rgb(0, 0, 0);
+	margin: 0;
+}
+
+.wrapper-two {
 	display:flex;
 	flex-wrap: wrap;
-	padding: 5em 5em 0 5em;
-	gap: 5em;
-	background-color: rgba(140, 190, 234, 0.5);
+	padding: 2em;
+	gap: 3em;
 	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: rgba(140, 190, 234, 0.5);
 }
 
-.content-left, .content-right {
+.wrapper-two div {
+	align-self: center;
+}
+
+.friday {
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	/* padding: 5em; */
+	gap: 1em;
+	justify-content: center;
+	align-items: center;
+}
+
+.event {
 	display: flex;
-	padding: 1em;
+	padding: 0.5em;
 	flex-direction: column;
+	align-items: center;
 	flex: 1;
 	border-radius: 0.7em;
 	border: 0.12em solid rgb(255, 255, 255);
-	max-width: 22em;
-	min-width: 17em;
+	max-width: 17em;
+	min-width: 15em;
+	min-height: 12em;
 	background-color: rgba(15, 85, 147, 0.5);
 }
 
-.content-left .bottom {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    justify-content: center; 
+.event .end {
+	align-self: flex-end;
 }
 
-.content-right .bottom {
-	align-self: center;
-	margin-top: auto;
-}
-
-.bottom div p {
-	font-weight: bold;
+ p {
+	font-size: 0.8em;
+	line-height: 140%;
+	color: rgb(255, 255, 255);
 	text-shadow: 1px 1px 2px rgb(0, 0, 0);
+	
 }
 
-.bottom div a {
+footer {
+	display: flex;
+	justify-content: flex-end;
+	padding: 1em;
+	border-top: 0.12em solid white;
+	background: rgb(34, 193, 195);
+	background: linear-gradient(169deg, rgba(34, 193, 195, 1) 0%, rgba(74, 134, 232, 1) 57%, rgba(89, 109, 226, 1) 81%);
+}
+
+.wrapper-two a {
 	display: flex;
     justify-content: center;
     align-items: center;
@@ -97,31 +126,6 @@ header a:hover {
 	text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
 
-h2 {
-	font-size: 1.1em;
-	line-height: 130%;
-	color: white;
-	text-shadow: 1px 1px 2px rgb(0, 0, 0);
-}
-
-p {
-	font-size: 0.8em;
-	line-height: 140%;
-	color: rgb(255, 255, 255);
-	text-shadow: 1px 1px 2px rgb(0, 0, 0);
-
-}
-
-footer {
-	display: flex;
-	justify-content: flex-end;
-	padding: 1em;
-	border-top: 0.12em solid white;
-	background: rgb(34, 193, 195);
-	background: linear-gradient(169deg, rgba(34, 193, 195, 1) 0%, rgba(74, 134, 232, 1) 57%, rgba(89, 109, 226, 1) 81%);
-}
-
 footer p {
 	margin: 0;
 }
-
