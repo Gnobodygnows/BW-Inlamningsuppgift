@@ -102,7 +102,7 @@ h3 {
 footer {
 	display: flex;
 	justify-content: flex-end;
-	padding: 1em;
+	padding: 1.2em;
 	border-top: 0.12em solid white;
 	background: rgb(34, 193, 195);
 	background: linear-gradient(169deg, rgba(34, 193, 195, 1) 0%, rgba(74, 134, 232, 1) 57%, rgba(89, 109, 226, 1) 81%);

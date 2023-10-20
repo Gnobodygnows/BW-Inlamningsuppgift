@@ -19,6 +19,15 @@ form {
 	margin: 1em 0;
 }
 
+.form-section p {
+	font-size: 1.3em;
+}
+
+.shadow {
+	text-shadow: 2px 2px 3px rgb(0, 0, 0);
+	font-weight: bold;
+}
+
 .form-section.button-row {
 	display: flex;
 	flex-direction: row;
@@ -26,10 +35,10 @@ form {
 }
 
 label {
-	font-size: 0.8em;
+	font-size: 1.2em;
 	border-radius: 0.4em;
 	color: white;
-	text-shadow: 1px 1px 3px rgb(0, 0, 0);
+	text-shadow: 2px 2px 3px rgb(0, 0, 0);
 }
 
 input:valid {
@@ -50,6 +59,7 @@ input:invalid {
 	color: #721717;
 	font-weight: bold;
 	text-shadow: none;
+	font-size: 1em;
 }
 
 input:invalid+.error-message {
@@ -71,6 +81,8 @@ input[type="checkbox"]+label:hover,
 input[type="radio"]+label:hover {
 	cursor: pointer;
 	user-select: none;
+	-ms-transform: scale(2); 
+    transform: scale(2); 
 }
 
 input[type="checkbox"]+label,
@@ -91,4 +103,13 @@ button[type="reset"] {
 	background: linear-gradient(169deg, rgba(34, 193, 195, 1) 0%, rgba(74, 134, 232, 1) 57%, rgba(89, 109, 226, 1) 81%);
 	text-shadow: 1px 1px 2px rgb(0, 0, 0);
 	cursor: pointer;
+}
+
+#form-name, #form-adress, #form-email, #form-password, #form-allergier {
+	height: 3em;
+}
+
+input::placeholder {
+    font-size: 1.5em; 
+    color: #7f7c7c; 
 }
