@@ -4,33 +4,31 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#4a86e8" />
 	<title>Bättre Web</title>
-
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="formular.css">
 	<link rel="stylesheet" href="media.css">
-
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Poppins&family=Roboto&display=swap"
 		rel="stylesheet">
-
 </head>
 
 <body>
 	<header>
 		<a href="seminarier.html">Seminarier</a>
-		<a href="#">Meny</a>
+		<a class="menu" href="#">Meny</a>
 		<h1>Bättre Web 2023!</h1>
 		<a href="#">Kontakt</a>
 		<a href="#">Om oss</a>
 	</header>
 	<div class="wrapper">
 		<div class="content-left">
-			<h2>
+			<h2 class="animate-left">
 				Du är hjärtligt välkommen på vår årliga konferens här hos oss på Bättre Web i Göteborg!
 			</h2>
-			<p>
+			<p class="animate-left">
 				Det är återigen dags! Vad kul att du har hittat hit! Vi kommer under helgen 20/10 till 22/10 Fredag
 				till
 				Söndag anordna tio spännande seminarier. Vare sig om du är en novis eller en erfaren frontendare så
@@ -38,27 +36,28 @@
 			</p>
 			<div class="bottom">
 				<div>
-					<p>
+					<p class="animate-left">
 						Mer info kan du hitta:
 					</p>
 				</div>
 				<div>
-					<a href="seminarier.html">Här</a>
+					<a class="animate-left" href="seminarier.html">Här</a>
 				</div>
 			</div>
 		</div>
 		<div class="content-right">
-			<h2>
+			<h2 class="animate-right">
 				Vi behöver lite information om dig!
 			</h2>
-			<p>
+			<p class="animate-right">
 				För att anmäla ditt intresse och för att din vistelse hos oss ska bli så bra och smidig som möjligt,
 				skulle vi vilja att du fyller i ett formulär!
 			</p>
-			<p> *OBS* (Du använder samma E-post adress och lösenord som när du loggar in hos ditt företag) </p>
+			<p class="animate-right"> *OBS* (Du använder samma E-post adress och lösenord som när du loggar in hos ditt
+				företag) </p>
 			<div class="bottom">
 				<div>
-					<p>
+					<p class="animate-right">
 						Formuläret hittar du nedan.
 					</p>
 				</div>
@@ -70,71 +69,65 @@
 		<form action="tack.html" method="get">
 			<div class="form-section">
 				<label for="form-name"> <strong>Ditt namn</strong> </label>
-				<input id="form-name" type="text" placeholder="Namn" required minlength="2" />
+				<input id="form-name" type="text" placeholder="Namn" required minlength="2">
 				<p class="error-message"> Var vänlig skriv in ditt namn </p>
 			</div>
-
 			<div class="form-section">
 				<label for="form-adress"> <strong>Adress</strong> </label>
-				<input id="form-adress" type="text" placeholder="Din adress" required minlength="5" />
-				<p class="error-message"> Var vänlig skriv in ditt namn </p>
+				<input id="form-adress" type="text" placeholder="Din adress" required minlength="5">
+				<p class="error-message"> Var vänlig skriv in din adress</p>
 			</div>
-
 			<div class="form-section">
 				<label for="form-email"> <strong>E-post adress</strong> </label>
-				<input id="form-email" type="email" placeholder="E-post" required />
+				<input id="form-email" type="email" placeholder="E-post" required>
 				<p class="error-message"> Var vänlig skriv in din E-post adress </p>
 			</div>
-
 			<div class="form-section">
 				<label for="form-password"> <strong>Lösenord</strong> </label>
-				<input id="form-password" type="password" placeholder="Skriv in ditt lösenord" required minlength="4" />
+				<input id="form-password" type="password" placeholder="Skriv in ditt lösenord" required minlength="4">
 				<p class="error-message"> Var vänlig skriv ditt lösenord </p>
 			</div>
-
 			<div class="form-section">
 				<p class="shadow">Klicka i vilka dagar du kan närvara. Alla dagar eller enskilda.</p>
 				<div>
-					<input id="alla" type="checkbox" name="check" />
+					<input id="alla" type="checkbox" name="check">
 					<label for="alla"> <strong>Alla dagar</strong> </label>
 				</div>
 				<div>
-					<input id="fredag" type="checkbox" name="check" />
+					<input id="fredag" type="checkbox" name="check">
 					<label for="fredag"> <strong>Fredag</strong> </label>
 				</div>
 				<div>
-					<input id="lördag" type="checkbox" name="check" />
+					<input id="lördag" type="checkbox" name="check">
 					<label for="lördag"> <strong>Lördag</strong> </label>
 				</div>
 				<div>
-					<input id="söndag" type="checkbox" name="check" />
+					<input id="söndag" type="checkbox" name="check">
 					<label for="söndag"> <strong>Söndag</strong> </label>
 				</div>
-
 				<p class="shadow">Välj den typ av mat du föredrar. Kött, fisk eller vegetariskt.</p>
 				<div>
-					<input id="kött" type="radio" name="mat" />
+					<input id="kött" type="radio" name="mat">
 					<label for="kött"> <strong>Kött</strong> </label>
 				</div>
 				<div>
-					<input id="fisk" type="radio" name="mat" />
+					<input id="fisk" type="radio" name="mat">
 					<label for="fisk"> <strong>Fisk</strong> </label>
 				</div>
 				<div>
-					<input id="vegetariskt" type="radio" name="mat" />
+					<input id="vegetariskt" type="radio" name="mat">
 					<label for="vegetariskt"> <strong>Vegetariskt</strong> </label>
 				</div>
 				<div class="form-section">
 					<label for="form-allergier"> <strong>Allergier - Här kan du skriva in ev. allergier</strong>
 					</label>
-					<input id="form-allergier" type="text" placeholder="T.ex nötallergi" required minlength="10" />
+					<input id="form-allergier" type="text" placeholder="T.ex nötallergi" required minlength="10">
 					<p class="error-message"> Var vänlig fyll i allergier, eller skriv "inga allergier" </p>
 				</div>
 				<div class="form-section button-row">
 					<button type="submit"> Anmäl dig </button>
 					<button type="reset"> Rensa </button>
 				</div>
-
 			</div>
 		</form>
 	</div>

@@ -2,7 +2,7 @@ body {
 	margin: auto;
 	font-family: Poppins, sans-serif;
 	background-image: url('Bilder/background.png');
-	background-size: cover; 
+	background-size: cover;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -11,29 +11,68 @@ body {
 
 h1 {
 	color: white;
+	font-size: 5em;
+	opacity: 0;
+	animation: slideIn 1s ease-out 0.5s forwards;
+	text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
 
 .tackar {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	
+
 }
 
 a {
 	display: flex;
-    justify-content: center;
-    align-items: center;
+	justify-content: center;
+	align-items: center;
 	align-self: center;
 	margin-top: 0.9em;
-	height: 3em;
-	width: 6em;
+	height: 4em;
+	width: 8em;
 	color: rgb(255, 255, 255);
 	font-weight: bold;
 	text-decoration: none;
 	border-radius: 0.5em;
 	border: 1px solid rgb(36, 85, 145);
-	background: rgb(34, 193, 195);
 	background: linear-gradient(169deg, rgba(34, 193, 195, 1) 0%, rgb(109, 158, 237) 57%, rgb(123, 138, 226) 81%);
 	text-shadow: 1px 1px 2px rgb(0, 0, 0);
+	animation: slideInLeft 1s ease-out 1s forwards;
+	opacity: 0;
+}
+
+a:hover {
+	background: linear-gradient(169deg, rgba(123, 138, 226) 0%, rgb(109, 158, 237) 57%, rgb(34, 193, 195, 1) 81%);
+	border-color: rgb(56, 242, 255);
+}
+
+a:active {
+	transform: scale(0.9) !important;
+}
+
+@keyframes slideIn {
+	0% {
+		opacity: 0;
+		transform: translateY(-500%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+
+@keyframes slideInLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-500%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }

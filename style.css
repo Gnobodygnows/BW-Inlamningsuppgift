@@ -1,5 +1,8 @@
+html {
+	scroll-behavior: smooth;
+}
+
 * {
-	/* border: 1px solid black; */
 	box-sizing: border-box;
 }
 
@@ -17,8 +20,12 @@ header {
 	align-items: center;
 	justify-content: space-between;
 	background: rgb(34, 193, 195);
-	background: linear-gradient(169deg, rgba(34, 193, 195, 1) 0%, rgba(74, 134, 232, 1) 57%, rgba(89, 109, 226, 1) 81%);
+	background: linear-gradient(169deg, rgba(34, 193, 195, 1) 0%, rgb(74, 134, 232) 57%, rgba(89, 109, 226, 1) 81%);
 	border-bottom: 0.12em solid white;
+	position: sticky;
+	width: 100%;
+	top: 0;
+	z-index: 1;
 }
 
 
@@ -56,6 +63,11 @@ header a:hover {
 	max-width: 22em;
 	min-width: 17em;
 	background-color: rgba(15, 85, 147, 0.5);
+	box-shadow: 0.3em 0.3em 0.6em rgba(0, 0, 0, 0.3);
+}
+
+.content-left p, .content-right p {
+	text-align: center;
 }
 
 .content-left .bottom {
@@ -88,20 +100,30 @@ header a:hover {
 	text-decoration: none;
 	border-radius: 0.5em;
 	border: 1px solid rgb(36, 85, 145);
-	background: rgb(34, 193, 195);
 	background: linear-gradient(169deg, rgba(34, 193, 195, 1) 0%, rgb(109, 158, 237) 57%, rgb(123, 138, 226) 81%);
 	text-shadow: 1px 1px 2px rgb(0, 0, 0);
+	transition: 0.3s, transform 0.2s;
+}
+
+.bottom div a:hover {
+	background: linear-gradient(169deg, rgba(123, 138, 226) 0%, rgb(109, 158, 237) 57%, rgb(34, 193, 195, 1) 81%);
+	border-color: rgb(56, 242, 255);
+}
+
+.bottom div a:active {
+	transform: scale(0.9) !important;
 }
 
 h2 {
-	font-size: 1.1em;
+	font-size: 1.4em;
 	line-height: 130%;
 	color: white;
 	text-shadow: 1px 1px 2px rgb(0, 0, 0);
+	text-align: center;
 }
 
 p {
-	font-size: 0.8em;
+	font-size: 1.2em;
 	line-height: 140%;
 	color: rgb(255, 255, 255);
 	text-shadow: 1px 1px 2px rgb(0, 0, 0);
@@ -121,3 +143,56 @@ footer p {
 	margin: 0;
 }
 
+.content-left {
+	overflow: hidden;
+}
+
+.animate-left {
+	opacity: 0;
+	animation: fadeInLeft 1s 0.2s both, slideInLeft 1s 0.2s both;
+}
+
+@keyframes fadeInLeft {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes slideInLeft {
+	from {
+		transform: translateX(-100%);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+.content-right {
+	overflow: hidden;
+}
+
+.animate-right {
+	opacity: 0;
+	animation: fadeInRight 1s 0.2s both, slideInRight 1s 0.2s both;
+}
+
+@keyframes fadeInRight {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes slideInRight {
+	from {
+		transform: translateX(200%);
+	}
+	to {
+		transform: translateX(0);
+	}
+}

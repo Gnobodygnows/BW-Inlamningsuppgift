@@ -19,6 +19,9 @@ header {
 	background: rgb(34, 193, 195);
 	background: linear-gradient(169deg, rgba(34, 193, 195, 1) 0%, rgba(74, 134, 232, 1) 57%, rgba(89, 109, 226, 1) 81%);
 	border-bottom: 0.12em solid white;
+	position: sticky;
+	width: 100%;
+	top: 0;
 }
 
 header a {
@@ -46,6 +49,7 @@ h3 {
 	color: white;
 	text-shadow: 1px 1px 2px rgb(0, 0, 0);
 	margin: 0;
+	text-align: center;
 }
 
 .wrapper-two {
@@ -75,7 +79,7 @@ h3 {
 
 .event {
 	display: flex;
-	padding: 0.5em;
+	padding: 1em;
 	flex-direction: column;
 	align-items: center;
 	flex: 1;
@@ -83,19 +87,25 @@ h3 {
 	border: 0.12em solid rgb(255, 255, 255);
 	max-width: 17em;
 	min-width: 15em;
-	min-height: 12em;
+	min-height: 18em;
+	max-height: 18em;
 	background-color: rgba(15, 85, 147, 0.5);
+	box-shadow: 0.3em 0.3em 0.6em rgba(0, 0, 0, 0.3);
 }
 
-.event .end {
+.end {
+	margin-top: auto;
 	align-self: flex-end;
 }
 
+
+
  p {
-	font-size: 0.8em;
+	font-size: 1em;
 	line-height: 140%;
 	color: rgb(255, 255, 255);
 	text-shadow: 1px 1px 2px rgb(0, 0, 0);
+	text-align: center;
 	
 }
 
@@ -104,7 +114,6 @@ footer {
 	justify-content: flex-end;
 	padding: 1.2em;
 	border-top: 0.12em solid white;
-	background: rgb(34, 193, 195);
 	background: linear-gradient(169deg, rgba(34, 193, 195, 1) 0%, rgba(74, 134, 232, 1) 57%, rgba(89, 109, 226, 1) 81%);
 }
 
@@ -124,6 +133,15 @@ footer {
 	background: rgb(34, 193, 195);
 	background: linear-gradient(169deg, rgba(34, 193, 195, 1) 0%, rgb(109, 158, 237) 57%, rgb(123, 138, 226) 81%);
 	text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+.wrapper-two a:hover {
+	background: linear-gradient(169deg, rgba(123, 138, 226) 0%, rgb(109, 158, 237) 57%, rgb(34, 193, 195, 1) 81%);
+	border-color: rgb(56, 242, 255);
+}
+
+.wrapper-two a:active {
+	transform: scale(0.9);
 }
 
 footer p {

@@ -1,41 +1,41 @@
 @media (max-width: 673px) {
-	/* header a {
-		display: none;
-	} */
-
-
-	header a:not(.semi-two, .semi) {
-		display: none;
-	}
 
 	header {
+		flex-wrap: wrap;
 		justify-content: center;
-		flex-direction: column;
-	}
-
-	body header {
+		flex-direction: row;
+		gap: 1em;
 		padding-bottom: 1em;
 	}
 
 	header h1 {
 		margin-bottom: 0;
+		order: 1;
+		width: 100%;
+		text-align: center;
 	}
 
-	.semi {
-		display: flex;
-		margin-bottom: 1em;
+	header a {
+		order: 2;
 	}
 
-	.semi-two {
-		display: flex;
-		margin-bottom: 1em;
+	.menu {
+		display: none;
 	}
 
 }
 
+@media (max-width: 495px) {
+	p {
+		font-size: 0.9em;
+	}
 
+	h2 {
+		text-align: center;
+	}
+}
 
-@media (max-width: 379px) {
+@media (max-width: 384px) {
 	h1 {
 		font-size: 1.5em;
 	}
@@ -46,11 +46,6 @@
 
 	h3 {
 		font-size: 1em;
-	}
-
-	.semi {
-		font-size: 0.85em;
-		margin-bottom: 0.5em;
 	}
 
 	.form-section.button-row {
@@ -64,7 +59,13 @@
 	}
 }
 
-@media (max-width: 310px) {
+@media (max-width: 355px) {
+	header {
+		gap: 0.4em;
+	}
+}
+
+@media (max-width: 318px) {
 	h1 {
 		font-size: 1.2em;
 	}
@@ -83,7 +84,4 @@
 		font-size: 0.7em;
 	}
 
-	/* .twapper-two {
-		padding: 2em 0;
-	} */
 }
